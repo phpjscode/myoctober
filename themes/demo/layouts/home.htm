@@ -29,11 +29,13 @@ description = "Default layout"
                         {% partial 'site/nav-links' %}
                     </ul>
                 </div>
+                <div class=" ">
+                    {% livewire 'counter' count=2 %}
+                </div>
             </div>
         </nav>
 
         {% partial 'site/flash-messages' %}
-
         <!-- Content -->
         <section id="layout-content">
             {% page %}

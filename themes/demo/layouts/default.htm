@@ -13,7 +13,9 @@ description = "Default layout"
         {% partial 'site/head/analytics-code' %}
     </head>
     <body class="{{ 'page-'~this.page.id }}">
-
+    <div class="container">
+        {% livewire 'counter' count=3 %}
+    </div>
     <!-- Header -->
         <header id="layout-header">
             {% partial 'site/header' %}
